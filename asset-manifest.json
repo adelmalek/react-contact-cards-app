@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-contact-cards-app/static/css/main.895b394d.css",
+    "main.js": "/react-contact-cards-app/static/js/main.16aff9d9.js",
+    "static/js/787.33ae406c.chunk.js": "/react-contact-cards-app/static/js/787.33ae406c.chunk.js",
+    "static/media/background.jpg": "/react-contact-cards-app/static/media/background.9d4ca4d3f7fc6c4f6fde.jpg",
+    "static/media/profile.png": "/react-contact-cards-app/static/media/profile.88886e1f9d288560fa5c.png",
+    "index.html": "/react-contact-cards-app/index.html",
+    "main.895b394d.css.map": "/react-contact-cards-app/static/css/main.895b394d.css.map",
+    "main.16aff9d9.js.map": "/react-contact-cards-app/static/js/main.16aff9d9.js.map",
+    "787.33ae406c.chunk.js.map": "/react-contact-cards-app/static/js/787.33ae406c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.895b394d.css",
+    "static/js/main.16aff9d9.js"
+  ]
+}
