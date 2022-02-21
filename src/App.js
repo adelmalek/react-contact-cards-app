@@ -15,6 +15,9 @@ function App() {
   const [searchResult, setSearchResult] = useState([]);
 
   const addContactHandler = (contact) => {
+    const { trimmedName } = contact;
+    contact.name = contact.trimmedName;
+    delete contact.trimmedName;
     setContacts(oldList => [...oldList, {id: uuidv4(), ...contact}]);
   };
 
@@ -25,8 +28,11 @@ function App() {
     setContacts(newContactList);
   };
 
-  const upDateContactHandler = (contact) => {
-    const { name, email, id } = contact;
+  const updateContactHandler = (contact) => {
+    const { trimmedName, email, id } = contact;
+    contact.name = contact.trimmedName;
+    delete contact.trimmedName;
+    console.log(contact);
     const newContactList = contacts.map( oldContact => {
       return oldContact.id === id ? {...contact} : oldContact;
     });
@@ -70,9 +76,9 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/add" element={<AddContact addContactHandler={addContactHandler}/>} />
-          <Route path="/" exact element={ContactListJsx}/>
+          <Route path="/" exact element={ContactListJsx} />
           <Route path="/contact/:id" element={<ContactDetails/>} />
-          <Route path="/edit" element={<EditContact upDateContactHandler={upDateContactHandler}/>} />
+          <Route path="/edit" element={<EditContact updateContactHandler={updateContactHandler}/>} />
         </Routes>
       </HashRouter>
     </div>

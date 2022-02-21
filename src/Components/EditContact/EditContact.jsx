@@ -14,11 +14,12 @@ export default function EditContact(props) {
 
     const handleUpdate = (e) => {
         e.preventDefault();
-        if (name === "" || email === "") {
+        const trimmedName = name.trim();
+        if (trimmedName === "" || email === "") {
             alert("All fields are mandatory!");
             return;
         };
-        props.upDateContactHandler({name, email, id});
+        props.updateContactHandler({trimmedName, email, id});
         setName("");
         setEmail("");
         navigate("/");
@@ -39,7 +40,7 @@ export default function EditContact(props) {
                            placeholder="Name ..."
                            value={name}
                            onChange={ (e) => 
-                               setName(e.target.value.trim())
+                               setName(e.target.value)
                            }
                            className="edit-contact-input"/>
                 

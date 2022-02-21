@@ -1,6 +1,6 @@
 {
   "name": "react-contact-cards-app",
-  "home": "https://geradele.github.io/react-contact-cards-app",
+  "homepage": "https://geradele.github.io/react-contact-cards-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

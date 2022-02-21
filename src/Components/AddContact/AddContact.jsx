@@ -9,11 +9,12 @@ export default function AddContact(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (name === "" || email === "") {
+        const trimmedName = name.trim();
+        if (trimmedName === "" || email === "") {
             alert("All fields are mandatory!");
             return;
         };
-        props.addContactHandler({name, email});
+        props.addContactHandler({trimmedName, email});
         setName("");
         setEmail("");
         navigate("/");
