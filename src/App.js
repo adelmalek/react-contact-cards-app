@@ -32,7 +32,6 @@ function App() {
     const { trimmedName, email, id } = contact;
     contact.name = contact.trimmedName;
     delete contact.trimmedName;
-    console.log(contact);
     const newContactList = contacts.map( oldContact => {
       return oldContact.id === id ? {...contact} : oldContact;
     });
