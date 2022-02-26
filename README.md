@@ -7,4 +7,4 @@
 - It is possible to click on individual contact and view information of the contact.
 - You can search for contacts.
 
-https://geradele.github.io/react-contact-cards-app/
+Link: https://geradele.github.io/react-contact-cards-app/
